@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item type="id" name="qus_1_ans" />
+    <item type="id" name="qus_2_ans" />
+    <item type="id" name="qus_3_ans" />
+    <item type="id" name="qus_4_ans" />
+    <item type="id" name="qus_5_ans" />
+    <item type="id" name="qus_6_ans" />
+    <item type="id" name="qus_7_ans" />
+    <item type="id" name="qus_8_ans" />
+    <item type="id" name="qus_9_ans" />
+    <item type="id" name="qus_10_ans" />
+</resources>

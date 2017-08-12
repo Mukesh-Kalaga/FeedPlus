@@ -1,0 +1,576 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#32526E"
+    android:layout_height="match_parent"
+    tools:context="com.technowebx.feedplus.MainActivity"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible"
+        android:id="@+id/user_details">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#32526E"
+            android:orientation="vertical"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp">
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/fp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="Feedback"
+                android:layout_marginBottom="30dp"
+                android:textAllCaps="true"
+                android:textColor="#fff"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/email_user"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginBottom="30dp"
+                android:background="@drawable/rounded_button"
+                android:ems="10"
+                android:hint="@string/email"
+                android:inputType="textEmailAddress"
+                android:paddingStart="20dp"
+                android:textColorHint="#d5ffffff" />
+
+            <EditText
+                android:id="@+id/phone_user"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/rounded_button"
+                android:ems="10"
+                android:hint="@string/phone"
+                android:inputType="phone"
+                android:paddingStart="20dp"
+                android:textColorHint="#d5ffffff" />
+
+            <Spinner
+                android:id="@+id/college_user"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:textColorHint="#d5ffffff"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/rounded_button"
+                android:entries="@array/colleges"
+                android:paddingStart="10dp"
+                android:textColor="#fff" />
+
+            <Spinner
+                android:id="@+id/branch_user"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:textColorHint="#d5ffffff"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/rounded_button"
+                android:entries="@array/branches"
+                android:paddingStart="10dp"
+                android:textColor="@android:color/white" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/next_1st"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:background="#FF884D"
+                android:text="NEXT"
+                android:textColor="#fff"
+                android:textSize="25sp" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/ws_details"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:background="#32526E"
+            android:orientation="vertical"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/fp" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="Feedback"
+                android:layout_marginBottom="30dp"
+                android:textAllCaps="true"
+                android:textColor="#fff"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+
+            <Spinner
+                android:id="@+id/ws_name"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:entries="@array/colleges"
+                android:layout_marginTop="30dp"
+                android:textColorHint="#d5ffffff"
+                android:background="@drawable/rounded_button"
+                android:paddingStart="10dp"
+                android:textColor="@android:color/white" />
+
+            <Spinner
+                android:id="@+id/ws_date"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:entries="@array/colleges"
+                android:layout_marginTop="30dp"
+                android:textColorHint="#d5ffffff"
+                android:background="@drawable/rounded_button"
+                android:paddingStart="10dp"
+                android:textColor="@android:color/white" />
+            <EditText
+                android:id="@+id/name_instructor"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/rounded_button"
+                android:ems="10"
+                android:hint="@string/instructor_name"
+                android:inputType="text"
+                android:paddingStart="20dp"
+                android:textColorHint="#d5ffffff" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/next_2nd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:background="#FF884D"
+                android:text="NEXT"
+                android:textColor="#fff"
+                android:textSize="25sp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/feedback_questions"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/feedback_questions_here"
+                android:background="#32526E"
+                android:orientation="vertical"
+                android:paddingLeft="30dp"
+                android:paddingBottom="50dp"
+                android:paddingRight="30dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="Feedback"
+                    android:layout_marginBottom="30dp"
+                    android:textAllCaps="true"
+                    android:textColor="#fff"
+                    android:textSize="30sp"
+                    android:textStyle="bold" />
+<!--
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="1. The facilitators were all organized."
+                    android:textColor="#fff" />
+
+                <Spinner
+                    android:id="@+id/qus_1_ans"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:entries="@array/feedback_answers"
+                    android:paddingStart="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="30dp"
+                    android:textColorHint="#d5ffffff"
+                    android:background="@drawable/rounded_button"
+                    android:textColor="@android:color/white" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="2. The facilitators knowledgeable about the topic."
+                    android:textColor="#fff" />
+                <Spinner
+                    android:id="@+id/qus_2_ans"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:entries="@array/feedback_answers"
+                    android:layout_marginTop="5dp"
+                    android:textColorHint="#d5ffffff"
+                    android:layout_marginBottom="30dp"
+                    android:background="@drawable/rounded_button"
+                    android:paddingStart="10dp"
+                    android:textColor="@android:color/white" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="3. The facilitator's presentation style was effective in helping me learn."
+                    android:textColor="#fff" />
+                <Spinner
+                    android:id="@+id/qus_3_ans"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:textColorHint="#d5ffffff"
+                    android:entries="@array/feedback_answers"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="30dp"
+                    android:background="@drawable/rounded_button"
+                    android:paddingStart="10dp"
+                    android:textColor="@android:color/white" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="4. I enjoyed learning in the Training Period"
+                    android:textColor="#fff" />
+                <Spinner
+                    android:id="@+id/qus_4_ans"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:entries="@array/feedback_answers"
+                    android:layout_marginTop="5dp"
+                    android:textColorHint="#d5ffffff"
+                    android:layout_marginBottom="30dp"
+                    android:background="@drawable/rounded_button"
+                    android:paddingStart="10dp"
+                    android:textColor="@android:color/white" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="5. I understood the concepts which were presented in training."
+                    android:textColor="#fff" />
+                <Spinner
+                    android:id="@+id/qus_5_ans"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:textColorHint="#d5ffffff"
+                    android:entries="@array/feedback_answers"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="30dp"
+                    android:background="@drawable/rounded_button"
+                    android:paddingStart="10dp"
+                    android:textColor="@android:color/white" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="6. The training improved my ability to utilize skills related to the topic."
+                    android:textColor="#fff" />
+                <Spinner
+                    android:id="@+id/qus_6_ans"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:entries="@array/feedback_answers"
+                    android:layout_marginTop="5dp"
+                    android:textColorHint="#d5ffffff"
+                    android:layout_marginBottom="30dp"
+                    android:background="@drawable/rounded_button"
+                    android:paddingStart="10dp"
+                    android:textColor="@android:color/white" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="7. I would recommend this training to others in future."
+                    android:textColor="#fff" />
+                <Spinner
+                    android:id="@+id/qus_7_ans"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:textColorHint="#d5ffffff"
+                    android:entries="@array/feedback_answers"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="30dp"
+                    android:background="@drawable/rounded_button"
+                    android:paddingStart="10dp"
+                    android:textColor="@android:color/white" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="8. I would attend other trainings offered by these facilitators."
+                    android:textColor="#fff" />
+                <Spinner
+                    android:id="@+id/qus_8_ans"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:textColorHint="#d5ffffff"
+                    android:entries="@array/feedback_answers"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="30dp"
+                    android:background="@drawable/rounded_button"
+                    android:paddingStart="10dp"
+                    android:textColor="@android:color/white" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="9. The hands on Experience increased my application level in learning."
+                    android:textColor="#fff" />
+                <Spinner
+                    android:id="@+id/qus_9_ans"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:entries="@array/feedback_answers"
+                    android:layout_marginTop="5dp"
+                    android:textColorHint="#d5ffffff"
+                    android:layout_marginBottom="30dp"
+                    android:background="@drawable/rounded_button"
+                    android:paddingStart="10dp"
+                    android:textColor="@android:color/white" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="10. The tasks given were appropriate and gave me confidence in learning the topics."
+                    android:textColor="#fff" />
+                <Spinner
+                    android:id="@+id/qus_10_ans"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:textColorHint="#d5ffffff"
+                    android:entries="@array/feedback_answers"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="30dp"
+                    android:background="@drawable/rounded_button"
+                    android:paddingStart="10dp"
+                    android:textColor="@android:color/white" />-->
+            </LinearLayout>
+        </ScrollView>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/next_3rd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:background="#FF884D"
+                android:text="NEXT"
+                android:textColor="#fff"
+                android:textSize="25sp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/idea_details"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:background="#32526E"
+            android:orientation="vertical"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="Feedback"
+                android:layout_marginBottom="30dp"
+                android:textAllCaps="true"
+                android:textColor="#fff"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/user_idea"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_multitext"
+                android:layout_marginTop="30dp"
+                android:minLines="10"
+                android:paddingStart="5dp"
+                android:hint="Enter your ideas and Suggestions"
+                android:gravity="top|left"
+                android:maxLines="10"
+                android:ems="10"
+                android:inputType="textMultiLine"
+                android:textColorHint="#d5ffffff"/>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/next_4th"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:background="#FF884D"
+                android:text="NEXT"
+                android:textColor="#fff"
+                android:textSize="25sp" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:id="@+id/success_feedback">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:background="#32526E"
+            android:orientation="vertical"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp">
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/fp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="Feedback Sent Successfully"
+                android:layout_marginBottom="10dp"
+                android:textColor="#fff"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="Thank You For Giving Us Feedback"
+                android:layout_marginBottom="30dp"
+                android:textColor="#fff"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+            <Button
+                android:id="@+id/next_5th"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:background="#FF884D"
+                android:text="Click Here to go to home"
+                android:textColor="#fff"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:id="@+id/failed_feedback">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:background="#32526E"
+            android:orientation="vertical"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp">
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/fp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="Feedback Sending Failed"
+                android:layout_marginBottom="10dp"
+                android:textColor="#fff"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="Please Try Again"
+                android:layout_marginBottom="30dp"
+                android:textColor="#fff"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+            <Button
+                android:id="@+id/next_6th"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:background="#FF884D"
+                android:text="Click Here to go to home"
+                android:textColor="#fff"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+    </RelativeLayout>
+</RelativeLayout>
+
+

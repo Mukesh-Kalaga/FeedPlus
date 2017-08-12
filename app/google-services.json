@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "121945722368",
+    "firebase_url": "https://feedplus-2c379.firebaseio.com",
+    "project_id": "feedplus-2c379",
+    "storage_bucket": "feedplus-2c379.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:121945722368:android:74fa0d3d4e0e82e9",
+        "android_client_info": {
+          "package_name": "com.technowebx.feedplus"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "121945722368-qn3r5l960jl0hkuref4cb4pfo6mrgn54.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.technowebx.feedplus",
+            "certificate_hash": "a6e024737bd2abbf10af9c24dfd2e1008af54fd6"
+          }
+        },
+        {
+          "client_id": "121945722368-h4482ckvgf15c7qatms2m3nerisgis7s.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB8g77ybyTqJLmCAjAIuO7DSDGaE-OOk44"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "121945722368-h4482ckvgf15c7qatms2m3nerisgis7s.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">FeedPlus</string>
+    <string name="msg_token_fmt" translatable="false">InstanceID Token: %s</string>
+    <string name="email">Email</string>
+    <string name="phone">phone</string>
+    <string name="roll_no">roll no</string>
+    <string name="choose_workshop">Choose Workshop</string>
+    <string name="choose_date_of_workshop">Choose date of Workshop</string>
+    <string name="instructor_name">Instructor Name</string>
+    <string-array name="colleges">
+        <item>Choose College</item>
+        <item>Aditya Engineering College</item>
+        <item>Sri Aditya Engineering College</item>
+        <item>Sai Aditya Engineering College</item>
+    </string-array>
+    <string-array name="branches">
+        <item>Choose Branch</item>
+        <item>CSE</item>
+        <item>ECE</item>
+        <item>MECH</item>
+        <item>EEE</item>
+        <item>PE</item>
+        <item>CIVIL</item>
+    </string-array>
+    <string-array name="feedback_answers">
+        <item>Choose Option</item>
+        <item>Strongly Agree</item>
+        <item>Agree</item>
+        <item>Disagree</item>
+        <item>Strongly Disagree</item>
+    </string-array>
+</resources>
